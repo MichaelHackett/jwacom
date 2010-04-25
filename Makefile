@@ -49,4 +49,4 @@ $(TEST_CLASS_DIR)/JWacomTest.class: $(TEST_CLASS_DIR) JWacomTest.java $(BUILD_DI
 
 clean:
 	rm -rf $(BUILD_DIR)
-#	rm -rf jwacom.jar jwacom_Wacom.h jwacom_Wacom.o jwacom/*.class *.class libjwacom.so
+
