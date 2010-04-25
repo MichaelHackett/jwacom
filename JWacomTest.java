@@ -22,7 +22,8 @@ public class JWacomTest extends JPanel
         this.setPreferredSize(new Dimension(300, 300));
 
         // Open wacom device
-        wacom = new Wacom("stylus");
+        //wacom = new Wacom("stylus");
+        wacom = new Wacom("Wacom Serial Tablet PC Pen Tablet/Digitizer");
 
         // Add listeners
         wacom.addWacomListener(new WacomListener()
