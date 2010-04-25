@@ -1,0 +1,31 @@
+JWacom 1.0
+(C) Copyright 2004 Tue Haste Andersen <haste@diku.dk>
+
+
+*ABOUT*
+JWacom is a Java library for accessing properties of the Wacom tablets.
+The library uses native methods, currently only Linux is supported. 
+The library provides functions to query the device state, and event listeners
+to listen for Wacom events.
+
+*NEWS*
+New since 1.0
+- Fixed memory leak
+
+*INSTALL*
+Run "make" to build the shared library libjwacom.so and the jwacom.jar file. 
+Place the libjwacom.so in your library path, eg. set LD_LIBRARY_PATH to point 
+to the directory where you
+place the library. Set your classpath to point to the directory where jwacom.jar
+is located, and you should be able to use the methods of jwacom.JWacom in your 
+program to read the properties of the Wacom pointing device.
+
+The API is documented in JWacom.java and an example is provided in 
+JWacomTest.java. To run the test type "make test". The test program reads and
+prints the pressure value of a stylus when the pointer is moved.
+
+*LICENCE*
+The library is free, and provided as-is. I take no responibility for any damage
+or any other stuff caused by or done with the library. If you use it, I will be 
+happy to know about it.
+
