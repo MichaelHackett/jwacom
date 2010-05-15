@@ -19,7 +19,7 @@ $(TEST_CLASS_DIR):
 	mkdir -p $(TEST_CLASS_DIR)
 
 $(BUILD_DIR)/jwacom.jar: $(CLASS_DIR)/jwacom/WacomEvent.class $(CLASS_DIR)/jwacom/WacomListener.class $(CLASS_DIR)/jwacom/Wacom.class
-	jar cvf $(BUILD_DIR)/jwacom.jar $(CLASS_DIR)/jwacom/*.class
+	jar cvf $(BUILD_DIR)/jwacom.jar -C $(CLASS_DIR) .
 
 $(CLASS_DIR)/jwacom/WacomEvent.class: $(CLASS_DIR) jwacom/WacomEvent.java
 	javac -d $(CLASS_DIR) jwacom/WacomEvent.java
